@@ -55,10 +55,10 @@ nav{
     padding: 150px 0;
     grid-template-columns: repeat(2,1fr);
 }
-/* banner-left{
+banner-left{
     display: flex;
     flex-direction: column;
-} */
+}
 .banner-left h1 {
     font-size: 75px;
     color: #fff;
@@ -69,3 +69,97 @@ nav{
 .banner-right img{
     width: 100%;
 }
+.banner-left .primary-button:hover .fa-arrow-right-to-bracket {
+    padding-left: 10px;
+    transition: padding-left 0.3s linear;
+}
+/* feature section */
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+}
+.card img {
+    width: 100%;
+}
+
+/* higlight section */
+
+.higlight {
+    display: grid;
+    padding: 150px 0;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.higlight-right img {
+    width: 100%;
+}
+
+.higlight-left p {margin-bottom: 50px;}
+
+.higligh-left h1 {
+    font-size: 48px;
+}
+
+.higlight-left h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.higlight-left {
+    margin-right: 50px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer img {
+    width: 20%;
+}
+
+.social-icon a {
+    color: #969BAB;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    background: #E7E7E8;
+    display: inline-block;
+    line-height: 17px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 50%;
+}
+.copyright {
+    font-size: 24px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 767px) {
+   .navigation{
+       display: none;
+   }
+    .banner{
+       grid-template-columns: 1fr;
+       padding: 0;
+   }
+
+  }
