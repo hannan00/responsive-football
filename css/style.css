@@ -10,12 +10,23 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.logo img{
-    width: 120px;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
+.primary-button {
+    color: #fff;
+    background: #E02C6D;
+    font-size: 16px;
+    padding: 15px 35px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 /* header css */
 header{
-    height: 100vh;
     background-color: #2D25A0;
 }
 nav{
@@ -35,4 +46,26 @@ nav{
     text-decoration: none;
     color: #fff;
     padding: 15px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.banner {
+    display: grid;
+    padding: 150px 0;
+    grid-template-columns: repeat(2,1fr);
+}
+/* banner-left{
+    display: flex;
+    flex-direction: column;
+} */
+.banner-left h1 {
+    font-size: 75px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.banner-right img{
+    width: 100%;
 }
